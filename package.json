@@ -50,5 +50,16 @@
   "devDependencies": {
     "prettier": "^1.17.1",
     "typescript": "^3.5.1"
-  }
+  },
+  "description": "Dashboard!",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rite2bala/OnlyDashboard.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rite2bala/OnlyDashboard/issues"
+  },
+  "homepage": "https://github.com/rite2bala/OnlyDashboard#readme"
 }

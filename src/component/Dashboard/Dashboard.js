@@ -8,9 +8,9 @@ import {
   TasksProgress,
   ClosedThisMonth,
   LatestSales,
-  UsersByDevice
+  UsersByDevice,
   //LatestProducts,
-  //LatestOrders
+  LatestOrders
 
 } from './components';
 
@@ -84,6 +84,15 @@ const Dashboard = () => {
           <UsersByDevice />
         </Grid>
         
+        <Grid
+          item
+          lg={4}
+          md={6}
+          xl={3}
+          xs={12}
+        >
+          <LatestOrders />
+        </Grid>
       </Grid>
     </div>
   );

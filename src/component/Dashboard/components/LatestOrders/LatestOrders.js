@@ -22,7 +22,7 @@ import {
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 import mockData from './data';
-import { StatusBullet } from 'components';
+//import { StatusBullet } from './StatusBullet';
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -72,7 +72,7 @@ const LatestOrders = props => {
             New entry
           </Button>
         }
-        title="Latest Orders"
+        title="Replenishment Status"
       />
       <Divider />
       <CardContent className={classes.content}>
@@ -81,8 +81,10 @@ const LatestOrders = props => {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>Order Ref</TableCell>
-                  <TableCell>Customer</TableCell>
+                  <TableCell>Molecule</TableCell>
+                  <TableCell>Product</TableCell>
+                  <TableCell>Available Quantity</TableCell>
+                  <TableCell>Safety Stock</TableCell>
                   <TableCell sortDirection="desc">
                     <Tooltip
                       enterDelay={300}
@@ -90,33 +92,28 @@ const LatestOrders = props => {
                     >
                       <TableSortLabel
                         active
-                        direction="desc"
+                        direction="asc"
                       >
-                        Date
+                        Expiry Date
                       </TableSortLabel>
                     </Tooltip>
                   </TableCell>
-                  <TableCell>Status</TableCell>
+                  <TableCell>Replenish Status</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
                 {orders.map(order => (
-                  <TableRow
-                    hover
-                    key={order.id}
-                  >
-                    <TableCell>{order.ref}</TableCell>
-                    <TableCell>{order.customer.name}</TableCell>
-                    <TableCell>
-                      {moment(order.createdAt).format('DD/MM/YYYY')}
-                    </TableCell>
+                  <TableRow hover key={order.id}>
+                    
+                    <TableCell>{order.Molecule}</TableCell>
+                    <TableCell>{order.Product}</TableCell>
+                    <TableCell>{order.AvailableQty}</TableCell>
+                    <TableCell>{order.SafetyStock}</TableCell>
+                    <TableCell>{order.ExpiryDate}</TableCell>
+
+                    <TableCell>{order.ReplenishStatus}</TableCell>
                     <TableCell>
                       <div className={classes.statusContainer}>
-                        <StatusBullet
-                          className={classes.status}
-                          color={statusColors[order.status]}
-                          size="sm"
-                        />
                         {order.status}
                       </div>
                     </TableCell>

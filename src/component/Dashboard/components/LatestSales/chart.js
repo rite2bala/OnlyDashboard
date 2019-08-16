@@ -1,17 +1,17 @@
 import palette from 'theme/palette';
 
 export const data = {
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+  labels: ['1 Aug', '2 Aug', '3 Aug', '4 Aug', '5 Aug', '6 Aug'],
   datasets: [
     {
-      label: 'YTD 2019: ',
+      label: 'This year',
       backgroundColor: palette.primary.main,
-      data: [18, 5, 19, 27, 29, 19, 20, 15]
+      data: [18, 5, 19, 27, 29, 19, 20]
     },
     {
-      label: 'YTD 2018',
+      label: 'Last year',
       backgroundColor: palette.neutral,
-      data: [11, 20, 12, 29, 30, 25, 13, 12]
+      data: [11, 20, 12, 29, 30, 25, 13]
     }
   ]
 };

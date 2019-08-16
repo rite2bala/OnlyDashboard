@@ -9,7 +9,6 @@ import {
   ClosedThisMonth,
   LatestSales,
   UsersByDevice,
-  //LatestProducts,
   LatestOrders
 
 } from './components';
@@ -86,9 +85,9 @@ const Dashboard = () => {
         
         <Grid
           item
-          lg={4}
-          md={6}
-          xl={3}
+          lg={8}
+          md={12}
+          xl={9}
           xs={12}
         >
           <LatestOrders />

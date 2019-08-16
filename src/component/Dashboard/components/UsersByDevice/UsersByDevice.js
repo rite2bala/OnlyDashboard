@@ -53,7 +53,7 @@ const UsersByDevice = props => {
           theme.palette.error.main,
           theme.palette.warning.main
         ],
-        borderWidth: 15,
+        borderWidth: 8,
         borderColor: theme.palette.white,
         hoverBorderColor: theme.palette.white
       }

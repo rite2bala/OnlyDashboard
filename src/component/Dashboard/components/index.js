@@ -1,5 +1,5 @@
 export { default as PendingApproval } from './PendingApproval';
-export { default as LatestOrders } from './LatestOrders';
+export { default as Replenish } from './Replenish';
 //export { default as LatestProducts } from './LatestProducts';
 export { default as LatestSales } from './LatestSales';
 export { default as TasksProgress } from './PendingAllocation';

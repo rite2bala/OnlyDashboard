@@ -9,7 +9,7 @@ import {
   ClosedThisMonth,
   LatestSales,
   UsersByDevice,
-  LatestOrders
+  Replenish
 
 } from './components';
 
@@ -90,7 +90,8 @@ const Dashboard = () => {
           xl={9}
           xs={12}
         >
-          <LatestOrders />
+  
+          <Replenish/>
         </Grid>
       </Grid>
     </div>

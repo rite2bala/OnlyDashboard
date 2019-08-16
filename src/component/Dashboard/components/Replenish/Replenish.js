@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
-import moment from 'moment';
+//import moment from 'moment';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
@@ -44,11 +44,11 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const statusColors = {
-  delivered: 'success',
-  pending: 'info',
-  refunded: 'danger'
-};
+// const statusColors = {
+//   delivered: 'success',
+//   pending: 'info',
+//   refunded: 'danger'
+// };
 
 const LatestOrders = props => {
   const { className, ...rest } = props;

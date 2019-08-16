@@ -27,7 +27,7 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const LatestSales = props => {
+const PrevRequests = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -46,7 +46,7 @@ const LatestSales = props => {
             Last 7 days <ArrowDropDownIcon />
           </Button>
         }
-        title="Latest Sales"
+        title="Requests History"
       />
       <Divider />
       <CardContent>
@@ -71,8 +71,8 @@ const LatestSales = props => {
   );
 };
 
-LatestSales.propTypes = {
+PrevRequests.propTypes = {
   className: PropTypes.string
 };
 
-export default LatestSales;
+export default PrevRequests;

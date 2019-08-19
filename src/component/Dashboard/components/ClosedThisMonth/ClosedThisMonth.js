@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
 //import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-import Star from '@material-ui/icons/Star';
+import DoneAll from '@material-ui/icons/DoneAll';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -69,7 +69,7 @@ const ClosedThisMonth = props => {
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
-              <Star className={classes.icon} />
+              <DoneAll className={classes.icon} />
             </Avatar>
           </Grid>
         </Grid>

@@ -8,7 +8,7 @@ import {
   TasksProgress,
   ClosedThisMonth,
   LatestSales,
-  UsersByDevice,
+ // UsersByDevice,
   Replenish
 
 } from './components';
@@ -44,7 +44,7 @@ const Dashboard = () => {
           xl={3}
           xs={12}
         >
-          <PendingShipment />
+                  <TasksProgress />
         </Grid>
         <Grid
           item
@@ -53,7 +53,8 @@ const Dashboard = () => {
           xl={3}
           xs={12}
         >
-          <TasksProgress />
+            <PendingShipment />
+
         </Grid>
         <Grid
           item
@@ -66,29 +67,17 @@ const Dashboard = () => {
         </Grid>
         <Grid
           item
-          lg={8}
-          md={12}
-          xl={9}
-          xs={12}
+          xs={6}
+          sm={3}
         >
           <LatestSales />
         </Grid>
-        <Grid
-          item
-          lg={4}
-          md={6}
-          xl={3}
-          xs={12}
-        >
-          <UsersByDevice />
-        </Grid>
+        
         
         <Grid
           item
-          lg={8}
-          md={12}
-          xl={9}
-          xs={12}
+          xs={6}
+          sm={9 }
         >
   
           <Replenish/>

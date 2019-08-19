@@ -5,5 +5,5 @@ export { default as LatestSales } from './PrevRequests';
 export { default as TasksProgress } from './PendingAllocation';
 export { default as ClosedThisMonth } from './ClosedThisMonth';
 export { default as PendingShipment } from './PendingShipment';
-export { default as UsersByDevice } from './UsersByDevice';
+//export { default as UsersByDevice } from './UsersByDevice';
 export { default as PendingAllocation } from './PendingAllocation';

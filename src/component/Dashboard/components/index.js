@@ -1,9 +1,9 @@
 export { default as PendingApproval } from './PendingApproval';
 export { default as Replenish } from './Replenish';
-//export { default as LatestProducts } from './LatestProducts';
 export { default as LatestSales } from './PrevRequests';
 export { default as TasksProgress } from './PendingAllocation';
 export { default as ClosedThisMonth } from './ClosedThisMonth';
 export { default as PendingShipment } from './PendingShipment';
-//export { default as UsersByDevice } from './UsersByDevice';
 export { default as PendingAllocation } from './PendingAllocation';
+export { default as TopTenCountries } from './TopTenCountries';
+export { default as TopTenMolecules } from './TopTenMolecules';
